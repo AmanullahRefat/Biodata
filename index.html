@@ -70,7 +70,7 @@
         .delay-400 { animation-delay: 0.4s; }
         .delay-500 { animation-delay: 0.5s; }
         .pattern-overlay {
-            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23d99f28' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23d99f28' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
         @media print {
             body { background: white; color: black; }
@@ -166,9 +166,15 @@
                             <p class="text-sm text-slate-600 font-medium">Homemaker</p>
                         </div>
                     </div>
-                    <div class="pt-4 mt-2 border-t border-slate-100 text-sm text-slate-700 space-y-2">
+                    <div class="pt-4 mt-2 border-t border-slate-100 text-sm text-slate-700 space-y-3">
                         <p><span class="font-bold text-midnight-900">Sibling:</span> 1 Younger Sister (Married)</p>
-                        <p><span class="font-bold text-midnight-900">Permanent Address:</span> Village: 245 Darikandi, P.O. Harirampur 1830, Dist: Manikganj</p>
+                        <div>
+                            <span class="font-bold text-midnight-900 block mb-1">Permanent Address:</span>
+                            <a href="https://maps.app.goo.gl/XrtahfaztyQ7Uxdq6" target="_blank" class="inline-flex items-start gap-2 text-gold-700 hover:text-gold-500 transition-colors group">
+                                <svg class="w-4 h-4 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                                <span class="underline underline-offset-2">Village: 245 Darikandi, P.O. Harirampur 1830, Dist: Manikganj</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -206,19 +212,21 @@
                         <div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-white border-2 border-midnight-900 text-midnight-900 flex items-center justify-center text-xs font-bold z-10">BSc</div>
                         <h3 class="font-bold text-slate-900 leading-tight text-lg">B.Sc. (Hons) Geography & Environment</h3>
                         <p class="text-gold-700 font-semibold text-sm">University of Dhaka</p>
-                        <p class="text-xs text-slate-900 font-bold mt-1">CGPA: 3.45</p>
+                        <p class="text-xs text-slate-900 font-bold mt-1">Passing Year: 2023 | CGPA: 3.45</p>
                     </div>
 
                     <div class="relative pl-12 group">
                         <div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-slate-50 border-2 border-slate-300 text-slate-500 flex items-center justify-center text-xs font-bold z-10">HSC</div>
                         <h3 class="font-bold text-slate-900 leading-tight text-lg">Higher Secondary Certificate</h3>
-                        <p class="text-slate-600 font-semibold text-sm">Notre Dame College, Dhaka (GPA 4.67)</p>
+                        <p class="text-slate-600 font-semibold text-sm">Notre Dame College, Dhaka</p>
+                        <p class="text-xs text-slate-900 font-bold mt-1">Passing Year: 2019 | GPA: 4.67</p>
                     </div>
 
                     <div class="relative pl-12 group">
                         <div class="absolute left-0 top-1 w-10 h-10 rounded-full bg-slate-50 border-2 border-slate-300 text-slate-500 flex items-center justify-center text-xs font-bold z-10">SSC</div>
                         <h3 class="font-bold text-slate-900 leading-tight text-lg">Secondary School Certificate</h3>
-                        <p class="text-slate-600 font-semibold text-sm">Patgram Anath Bandhu Govt. High School (GPA 4.41)</p>
+                        <p class="text-slate-600 font-semibold text-sm">Patgram Anath Bandhu Govt. High School</p>
+                        <p class="text-xs text-slate-900 font-bold mt-1">Passing Year: 2017 | GPA: 4.41</p>
                     </div>
                 </div>
             </section>
@@ -256,7 +264,9 @@
                 <div class="mb-6 pl-2 border-l-2 border-slate-200">
                     <p class="text-xs text-slate-400 uppercase tracking-wide mb-1">Current Role</p>
                     <p class="font-bold text-lg text-slate-900">Jr. GIS Analyst</p>
-                    <p class="text-gold-600 text-sm font-bold">EK Architect - Mango Teleservices JV</p>
+                    <p class="text-gold-600 text-sm font-bold">
+                        EK Architect - <a href="https://www.mango.com.bd/" target="_blank" class="underline decoration-gold-400 hover:text-gold-500 transition-colors">Mango Teleservices</a> JV
+                    </p>
                 </div>
 
                 <div class="mb-8">
@@ -286,7 +296,7 @@
                 <h2 class="text-gold-100 font-serif text-2xl mb-8">Contact Information</h2>
                 <div class="flex flex-col gap-4">
                     <a href="tel:+8801843255836" class="bg-gradient-to-r from-gold-100 to-white text-midnight-900 font-bold py-4 rounded-xl">Call +880 18432 55836</a>
-                    <a href="mailto:amanullah.geo.du@gmail.com" class="bg-midnight-800/50 text-white font-medium py-4 rounded-xl border border-white/10">Email Me</a>
+                    <a href="mailto:amanullah.geo.du@gmail.com" class="bg-midnight-800/50 text-white font-medium py-4 rounded-xl border border-white/10 text-xs sm:text-sm md:text-base px-2 break-all">Email: amanullah.geo.du@gmail.com</a>
                 </div>
                 <p class="mt-8 text-slate-400 text-xs">Present: 31 (1st Floor), Fakirapool, Motijheel, Dhaka 1000</p>
             </div>
